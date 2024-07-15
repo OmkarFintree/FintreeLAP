@@ -1,6 +1,7 @@
 streamlit
-streamlit-option-menu
 pymongo
 pandas
+numpy
+streamlit-option-menu
 openpyxl
 xlsxwriter
