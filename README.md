@@ -1,19 +1,20 @@
 # 🌳 Fintree Finance LAP Application
 Welcome to the Fintree Finance LAP Application! This application helps manage customer data and disbursement details efficiently using Streamlit and MongoDB.
 
-🚀 Features
+# 🚀 Features
 User Registration & Authentication: Register new users and authenticate existing users.
 Admin Panel: Manage customer data, update details, and control user permissions.
 User Panel: Access to add, update, view customer details, and download data.
 File Uploads: Upload documents like PAN, Signed Agreement, etc.
 Data Export: Download user and customer data in Excel format.
-🛠️ Technologies Used
+
+# 🛠️ Technologies Used
 Streamlit: For creating the web application.
 MongoDB: For the database.
 Python: As the programming language.
 Pandas: For data manipulation.
 Openpyxl & Xlsxwriter: For handling Excel files.
-📦 Installation
+# 📦 Installation
 Clone the Repository:
 
 sh
@@ -36,7 +37,8 @@ Run the Application:
 sh
 Copy code
 streamlit run app.py
-🗃️ MongoDB Setup
+
+# 🗃️ MongoDB Setup
 Install MongoDB:
 
 Follow the installation guide from the official MongoDB website.
@@ -49,7 +51,8 @@ Configure the Database:
 
 Create a database named Fintree_Finance.
 Create collections: users, admins, customers, permissions, update_logs, deleted_users.
-📑 Usage
+
+# 📑 Usage
 Admin Login:
 
 Use the username omadmin and password ompass for the main admin login.
@@ -65,4 +68,4 @@ Download user and customer data in Excel format from the Download tab.
 🎉 Enjoy!
 Feel free to explore and use the Fintree Finance LAP Application to manage your customer data efficiently!
 
-This README provide
+
