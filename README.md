@@ -1,4 +1,4 @@
-#🌳 Fintree Finance LAP Application
+# 🌳 Fintree Finance LAP Application
 Welcome to the Fintree Finance LAP Application! This application helps manage customer data and disbursement details efficiently using Streamlit and MongoDB.
 
 🚀 Features
