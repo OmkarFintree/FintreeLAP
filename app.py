@@ -6,6 +6,18 @@ import pandas as pd
 import base64
 import io
 from datetime import datetime
+from pymongo import MongoClient
+from pymongo.errors import ServerSelectionTimeoutError
+
+try:
+    client = MongoClient("mongodb://localhost:27017/", serverSelectionTimeoutMS=5000)
+    db = client["Fintree_Finance"]
+    # Test the connection
+    client.admin.command('ping')
+except ServerSelectionTimeoutError as err:
+    st.error("Could not connect to MongoDB server. Please check your connection settings and try again.")
+    st.error(str(err))
+
 
 st.set_page_config(
     page_icon="🌳",
@@ -13,7 +25,7 @@ st.set_page_config(
 )
 
 # MongoDB connection
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://localhost:27017/", serverSelectionTimeoutMS=5000)
 db = client["Fintree_Finance"]
 users_collection = db["users"]
 admins_collection = db["admins"]
